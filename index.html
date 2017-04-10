@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Page Title -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <!-- DON'T DELETE THIS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- YOUR CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+    <!--Your HTML Starts Here :: Hint, you must put your grid in a .container div. -->
+    <section>
+      <img class="topheader" src="img/desk.jpeg">
+      
+      <img class="topheader" src="img/herc.jpg">
+      <img class="topheader" src="img/herc2.png">
+
+     
+      <script type="text/javascript">
+       
+        var slideIndex = 0;
+          carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("topheader");
+           for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+              slideIndex = 1
+            } 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(carousel, 5000); 
+        }
+      </script>
+      
+      
+    </section>
+       
+          <h1>About me</h1>
+        
+    <div class="container">
+            <div class="row" id="firstrow">
+              <div class="col-md-8" id="bio">
+             
+
+                  <p>
+                   
+                      Hello, my name is Michael Lopez. I’m currently a senior at Bartlett High School. I'm graduating this year in May 15, 2017. My interests are working out, coding, and reading. I also like to eat Chick-Fil-A, the spicy chicken sandwich is my favorite. My favorite icecream flavor is cookies and cream. I like to try new foods, because I am not a picky eater.
+                      <br>
+
+                     <p> <strong>Hobbies of Mine</strong> <br>
+                        Going to the gym is one of my favorite hobbies. I like to stay in shape because it makes me feel good and it shows that I take care of myself.
+                        I’m currently taking a Web Design Class, I fell in love coding when I started this class. I love it because you can turn nothing into something creative. The unique languages that I know are JavaScript, HTML, and CSS. One of my favorite books is “My Inventions” by Nikola Tesla. The theme of the book is no matter what people say about you, you can do anything that you desire to do.</p>   
+                      
+              </div>
+              <div class="col-md-4" id="pic">
+                   <img class="profile" src="img/me2.jpg">
+              </div>
+             </div> <!-- End of row -->
+             <h2>Websites</h2>
+                <div class="row" id="secondrow">
+                
+                  <div class="col-md-4">
+                    <img class="website1" src="img/website1.png">
+                  </div>
+                  <div class="col-md-4">
+                   <img class="website2" src="img/website2.png">
+                  </div> 
+                  <div class="col-md-4">
+                   
+                  </div> 
+                </div> <!-- End of row -->
+
+
+
+     </div>
+
+
+
+
+    
+
+    <!-- DON'T DELETE THIS. DO NOT PUT ANY ADDITIONAL HTML BELOW THIS POINT. jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Custom Helper Script -->
+    <script src="js/helper.js"></script>
+  </body>
+</html>
+
+
